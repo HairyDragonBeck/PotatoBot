@@ -1,0 +1,7 @@
+{
+    "name" : "Potato Bot",
+    "version" : "1.0.0",
+    "description" : "A multipurpose bot",
+    "main" : "index.js",
+    "author" : "loltatoez and everyone else"
+}
