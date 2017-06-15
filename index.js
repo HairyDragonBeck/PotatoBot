@@ -3,7 +3,7 @@ const Discord = require('discord.js');
 const bot = new Discord.Client();
 
 function commandIs(str, msg) {
-    return msg.content.toLowerCase()("<" + str);
+    return msg.content.toLowerCase().startsWith("<" + str);
 }
 
 
