@@ -1,11 +1,9 @@
 {
-    "name": "potatobot",
-    "version": "1.0.0",
-    "description": "A multipurpose bot",
-    "main": "index.js",
-     "author" : "loltatoez and everyone else",
-    "dependencies": {
-        "discord.js": "^11.1.0"
-    }
+  "name": "potatobot",
+  "version": "1.0.0",
+  "description": "A multipurpose bot",
+  "main": "index.js",
+  "repository": "https://github.com/HairyDragonBeck/PotatoBot",
+  "author": "loltatoez",
+  "license": "MIT"
 }
-
