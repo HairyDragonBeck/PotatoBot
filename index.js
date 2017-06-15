@@ -20,18 +20,44 @@ bot.on('message', msg => {
         }
 
         if (cmd === 'clearlogs'){
-            if (msg.author.username != "loltatoez") {
+            
+            if (msg.author.id !== '161588907866062848') {
                 msg.channel.send('Sorry, you are not the best person ever, loltatoez!');
-                console.log(msg.author.username + " attempted to clear the logs!");
+                console.log(msg.author.username + ' attempted to clear the logs!');
             }
             else {
                 
             }
         }
         if (cmd === 'ping') {
-            msg.channel.sendMessage(`:potato:Pong! \`${msg.editedTimestamp - msg.createdTimestamp} ms\` `);
+            msg.channel.send(':potato: Pong!').then(m => m.edit(`:potato: Pong! \`${m.createdTimestamp - msg.createdTimestamp}ms\``));
         }
+        if (cmd === 'eval') {
+            if (msg.author.id !== '161588907866062848') {
+                msg.channel.send('Sorry, you are not the best person ever, loltatoez!');
+                console.log(msg.author.username + ' attempted to use the eval command!');
+        }
+        else {
+            
+        }
+        }
+        if (cmd === 'emojispam') {
+             if (msg.author.id !== '161588907866062848') {
 
+                msg.channel.send('Sorry, you are not the best person ever, loltatoez!');
+
+                console.log(msg.author.username + ' attempted to use the eval command!'); 
+            
+            } else {
+                msg.channel.fetchMessages({count: 25}).then(m => {
+
+        for(const r of m.values()) r.react('🥔');
+            
+        
+});
+        
+        }
+}
 });
 
 
