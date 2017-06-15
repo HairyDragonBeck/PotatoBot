@@ -1,10 +1,9 @@
 
 const Discord = require('discord.js');
 const bot = new Discord.Client();
-const prefix = "<";
 
 function commandIs(str, msg) {
-    return msg.content.toLowerCase()(prefix + str);
+    return msg.content.toLowerCase()("<" + str);
 }
 
 
